@@ -3,12 +3,10 @@ Conway Ruby Template
 
 This is a simple Ruby project template for use in a Coderetreat (so you don't have to waste time with the same setup steps).
 
-Please do not contribute implementation here.
+Please do not contribute implementation here.  Environment setup, general documentation, and example grids are fine, though.
 
 Getting Started
 ---------------
-
-This assumes you have rvm.
 
     ./configure
     rake
