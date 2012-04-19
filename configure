@@ -4,12 +4,8 @@
 # @see http://en.wikipedia.org/wiki/Configure_script
 set -o errexit
 
-echo "[$0] Starting"
-echo "[$0] \$*: $*"
+# Bootstrap
+curl -so .roboconf.sh https://raw.github.com/hedgeyedev/roboconf/master/roboconf.sh
+source .roboconf.sh
 
-# Assumes rvm:
-gem install bundler --version "~> 1.0" --no-rdoc --no-ri
-# @see http://stackoverflow.com/questions/6519482/heroku-i-dont-want-to-install-postgres-locally
-bundle install
-
-echo "[$0] Finished"
+roboconf-bundler '~> 1.0.0'
